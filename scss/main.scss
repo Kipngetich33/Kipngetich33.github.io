@@ -15,44 +15,6 @@ $letter-spacing: 0px;
  $preset:  $green;
  $preset-drack:  $green-drack;
  
-	/*
-* Mate - Bootstrap 4 Template
-* Build Date: December 2017
-* Last updated: December 2017
-* Version: 1.0
-* Author: UIdeck
-* Copyright (C) 2018 UIdeck
-*/
-
-/* ------------------------------------- */
-/* TABLE OF CONTENTS
-/* -------------------------------------
-  1. IMPORT GOOGLE FONTS
-  2. GENERAL
-    -2.1 SECTION TITLE
-    -2.2 BUTTONS
-    -2.3 SOCIAL ICON
-    -2.4 PRE LOADER
-    -2.5 SCROLL TO UP
-  3. HERO AREA 
-  4. NAVBAR
-  5. SERVICES SECTION
-  6. FEATURES SECTION
-  7. VIDEO PROMO SECTION
-  8. PORTFOLIO SECTION
-  9. PRICING TABLE 
-  10. COUNTER SECTION
-  11. TESTIMONIAL AREA
-  12. TEAM SECTION
-  13. BLOG SECTION
-  14. CONTACT SECTION
-  15. FOOTER SECTION
-    -15.1 COMING SOON PAGE
-  ------------------------------------- */
-
-/* ==========================================================================
-   1. IMPORT GOOGLE FONTS
-   ========================================================================== */
 	@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
 
  /* ==========================================================================
@@ -367,9 +329,8 @@ $letter-spacing: 0px;
 	  transition: all 0.2s linear;
 	}
 
-	/* ==========================================================================
-   3. Hero Area
-   ========================================================================== */
+// this is the landing page section
+
 	#hero-area{
 		background: url(../img/hero-area.jpg) fixed no-repeat;
 		background-size: cover;

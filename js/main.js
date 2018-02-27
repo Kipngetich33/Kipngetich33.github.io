@@ -141,10 +141,10 @@
 
 /* this is the send email section*/
 $('#contactForm').submit(function(e){
-    console.log('clicked')
-    name = document.getElementById('name'),
-    email = document.getElementById('email'),
-    message = document.getElementById('message')
+    console.log('clicked is')
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var text = $("#text").val();
 
     console.log(name)
     
