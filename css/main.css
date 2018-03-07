@@ -404,8 +404,12 @@ button:focus {
    3. Hero Area
    ========================================================================== */
 #hero-area {
-  background: url(../img/hero-area.jpg) fixed no-repeat;
-  background-size: cover;
+  /* background: url(../img/hero-area.jpg) fixed no-repeat; */
+  background: #bbd2c5;
+  background: -webkit-linear-gradient(to top, #bbd2c5, #536976, #292e49);
+  background: linear-gradient(to top, #bbd2c5, #536976, #292e49);
+  /* background-size: cover; */
+  background-repeat: no-repeat;
   color: #fff;
   overflow: hidden;
   position: relative;

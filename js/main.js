@@ -123,23 +123,16 @@
     keyboardNav: true,
   });
 
-
-/* stellar js
-  ========================================================*/
   $.stellar({
     horizontalScrolling: true,
     verticalOffset: 40,
     responsive: true
   });
 
-/* 
-   Page Loader
-   ========================================================================== */
   $('#loader').fadeOut();
 
 }(jQuery));
 
-/* this is the send email section*/
 $('#contactForm').submit(function(e){
     console.log('clicked is')
     var name = $("#name").val();
