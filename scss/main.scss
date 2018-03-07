@@ -1,269 +1,242 @@
 
-//All Preset color variables are here
 $primary-font: 'Poppins', sans-serif;
 $regular: 400;
 $medium: 500;
 $bold: 700;
 $letter-spacing: 0px;
-
-
- // Green
- $green: #61D2B4;
- $green-drack: #33b391;
-
-//Current Preset Declareation
- $preset:  $green;
- $preset-drack:  $green-drack;
+$green: #61D2B4;
+$green-drack: #33b391;
+$preset:  $green;
+$preset-drack:  $green-drack;
  
-	@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+body{
+	font-family: 'Poppins', sans-serif;
+	color: #333;
+	font-size: 14px;
+	font-weight: 400;
+	background: #fff;
+	overflow-x: hidden;
+}
+html{
+	overflow-x: hidden;
+}
+p{
+	font-size: 14px;
+	line-height: 26px;
+}
+a:hover, a:focus {
+		color: $preset;
+}
+a{
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+h1,h2,h3,h4,h5{
+	font-family: 'Poppins', sans-serif;
+	font-size: 40px;	
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	li{
+		list-style: none;
+	}
+}
+a:hover,
+a:focus{
+	text-decoration: none;
+	outline: none;
+}
+a:not([href]):not([tabindex]){
+	color: #fff;
+}
+a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover{
+	color: $preset;
+}
 
- /* ==========================================================================
-   2. GENERAL
-   ========================================================================== */
-	body{
-		font-family: 'Poppins', sans-serif;
+.section{
+	padding: 80px 0;
+}
+.section-header{
+	color: #fff;
+	margin-bottom: 40px;
+	text-align: center;
+	.section-title{
+		font-size: 42px;
+		margin-top: 0;
+		text-transform: uppercase;
+		font-weight: 700;
+		color: #333;
+		position: relative;
+		span{
+			color: $preset
+		}
+	}
+	.section-subtitle{
+		margin-top: 15px;
 		color: #333;
 		font-size: 14px;
 		font-weight: 400;
-		background: #fff;
-		overflow-x: hidden;
 	}
-	html{
-		overflow-x: hidden;
-	}
-	p{
-		font-size: 14px;
-		line-height: 26px;
-	}
-	a:hover, a:focus {
-	    color: $preset;
-	}
-	a{
-		-webkit-transition: all 0.2s linear;
-		-moz-transition: all 0.2s linear;
-		-o-transition: all 0.2s linear;
-		transition: all 0.2s linear;
-	}
-	h1,h2,h3,h4,h5{
-		font-family: 'Poppins', sans-serif;
-		font-size: 40px;	
-		font-weight: 700;
-		letter-spacing: 1px;
-	}
-	ul{
-		margin: 0;
-		padding: 0;
-		li{
-			list-style: none;
-		}
-	}
-	a:hover,
-	a:focus{
-		text-decoration: none;
-		outline: none;
-	}
-	a:not([href]):not([tabindex]){
-		color: #fff;
-	}
-	a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover{
-		color: $preset;
-	}
-
-/* ==========================================================================
-   2.1 Section Title
-   ========================================================================== */
-	.section{
-		padding: 80px 0;
-	}
-	.section-header{
-		color: #fff;
-		margin-bottom: 40px;
-		text-align: center;
-		.section-title{
-			font-size: 42px;
-			margin-top: 0;
-			text-transform: uppercase;
-			font-weight: 700;
-			color: #333;
-			position: relative;
-			span{
-				color: $preset
-			}
-		}
-		.section-subtitle{
-			margin-top: 15px;
-			color: #333;
-			font-size: 14px;
-			font-weight: 400;
-		}
-		.lines{
-			margin: auto;
-			width: 70px;
-			position: relative;
-			border-top: 2px solid $preset;
-			margin-top: 15px;
-		}
-	}
-
-/* ==========================================================================
-   2.2 Buttons
-   ========================================================================== */
-	.btn{
-		font-size: 14px;
-		padding: 11px 40px;
-		border-radius: 0px;
-		font-weight: 400;
-		color: #fff;
-		text-transform: uppercase;
-		-webkit-transition: all 0.2s linear;
-		-moz-transition: all 0.2s linear;
-		-o-transition: all 0.2s linear;
-		transition: all 0.2s linear;
-		display: inline-block;
-	}
-	.btn:focus,
-	.btn:active{
-		box-shadow: none;
-		outline: none;
-		color: #fff;
-	}
-	.btn-common{
-		border: 1px solid $preset;
-		background: $preset;
+	.lines{
+		margin: auto;
+		width: 70px;
 		position: relative;
-		color: #fff;
-		z-index: 1;
-		border-radius: 30px;
-		&:hover{
-			color: #fff;
-			background: $preset-drack;
-			border-color: $preset-drack;
-			transition: all .50s ease-in-out;
-			-moz-transition: all .50s ease-in-out;
-			-webkit-transition: all .50s ease-in-out;
-		}
+		border-top: 2px solid $preset;
+		margin-top: 15px;
 	}
-	.btn-border{
-		color: #fff;
-		background-color: transparent;
-		border: 2px solid #fff;
-		border-radius: 4px;
-		&:hover{
-			border: 2px solid #fff;
-			color: #fff;
-			background-color: $preset;
-		}
-	}
-	.btn-lg{
-		padding: 14px 33px;
-		text-transform: uppercase;
-		font-size: 16px;
-	}
-	.btn-rm{
-		padding: 7px 0px;
-		color: #999;
-		text-transform: capitalize;
-		i{
-			vertical-align: middle;
-		}
-	}
-	button:focus{
-		outline: none!important;
-	}
-	.clear{
-		clear: both;
-	}
+}
 
 /* ==========================================================================
-   2.3 Social Iocns
-   ========================================================================== */
-	.social-icons {
-		margin-top:40px
+	2.2 Buttons
+	========================================================================== */
+.btn{
+	font-size: 14px;
+	padding: 11px 40px;
+	border-radius: 0px;
+	font-weight: 400;
+	color: #fff;
+	text-transform: uppercase;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	display: inline-block;
+}
+.btn:focus,
+.btn:active{
+	box-shadow: none;
+	outline: none;
+	color: #fff;
+}
+.btn-common{
+	border: 1px solid $preset;
+	background: $preset;
+	position: relative;
+	color: #fff;
+	z-index: 1;
+	border-radius: 30px;
+	&:hover{
+		color: #fff;
+		background: $preset-drack;
+		border-color: $preset-drack;
+		transition: all .50s ease-in-out;
+		-moz-transition: all .50s ease-in-out;
+		-webkit-transition: all .50s ease-in-out;
 	}
-	.social-icons ul {
-		margin:0;
-		padding:0;
-		list-style:none
+}
+.btn-border{
+	color: #fff;
+	background-color: transparent;
+	border: 2px solid #fff;
+	border-radius: 4px;
+	&:hover{
+		border: 2px solid #fff;
+		color: #fff;
+		background-color: $preset;
 	}
-	.social-icons ul li {
-		display:inline
+}
+.btn-lg{
+	padding: 14px 33px;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.btn-rm{
+	padding: 7px 0px;
+	color: #999;
+	text-transform: capitalize;
+	i{
+		vertical-align: middle;
 	}
-	.social-icons ul li a {
-		display:inline-block;
-		margin-right: 5px;
-		margin-bottom: 15px;
-		border-radius: 50%;
-		line-height: 40px;
-		width: 40px;
-		height: 40px;
-		text-align: center;
-		background: #ddd;
-		font-size: 16px
-	}
-	.social-icons ul li a:hover {
-		color:#fff
-	}
-	.facebook a {
-		color:#4867AA
-	}
-	.facebook a:hover {
-		background:#4867AA
-	}
-	.twitter a {
-		color:#1DA1F2
-	}
-	.twitter a:hover {
-		background:#1DA1F2
-	}
-	.google-plus a {
-		color:#DD4D42
-	}
-	.google-plus a:hover {
-		background:#DD4D42
-	}
-	.youtube a {
-		color:#DF2926
-	}
-	.youtube a:hover {
-		background:#DF2926
-	}
-	.linkedin a {
-		color:#007BB6
-	}
-	.linkedin a:hover {
-		background:#007BB6
-	}
-	.pinterest a {
-		color:#BD081C
-	}
-	.pinterest a:hover {
-		background:#BD081C
-	}
-	.dribbble a {
-		color:#EA4C89
-	}
-	.dribbble a:hover {
-		background:#EA4C89
-	}
-	.behance a {
-		color:#0B7CFF
-	}
-	.behance a:hover {
-		background:#0B7CFF
-	}
+}
+button:focus{
+	outline: none!important;
+}
+.clear{
+	clear: both;
+}
 
-	 /* ==========================================================================
-	 2.4  Pre Loader
-	 ========================================================================== */
-	// #loader{
-	// 	position: fixed;
-	// 	top: 0;
-	// 	left: 0;
-	// 	width: 100%;
-	// 	height: 100%;
-	// 	background: #333;
-	// 	z-index: 9999999999;
-	// }
+.social-icons {
+	margin-top:40px
+}
+.social-icons ul {
+	margin:0;
+	padding:0;
+	list-style:none
+}
+.social-icons ul li {
+	display:inline
+}
+.social-icons ul li a {
+	display:inline-block;
+	margin-right: 5px;
+	margin-bottom: 15px;
+	border-radius: 50%;
+	line-height: 40px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	background: #ddd;
+	font-size: 16px
+}
+.social-icons ul li a:hover {
+	color:#fff
+}
+.facebook a {
+	color:#4867AA
+}
+.facebook a:hover {
+	background:#4867AA
+}
+.twitter a {
+	color:#1DA1F2
+}
+.twitter a:hover {
+	background:#1DA1F2
+}
+.google-plus a {
+	color:#DD4D42
+}
+.google-plus a:hover {
+	background:#DD4D42
+}
+.youtube a {
+	color:#DF2926
+}
+.youtube a:hover {
+	background:#DF2926
+}
+.linkedin a {
+	color:#007BB6
+}
+.linkedin a:hover {
+	background:#007BB6
+}
+.pinterest a {
+	color:#BD081C
+}
+.pinterest a:hover {
+	background:#BD081C
+}
+.dribbble a {
+	color:#EA4C89
+}
+.dribbble a:hover {
+	background:#EA4C89
+}
+.behance a {
+	color:#0B7CFF
+}
+.behance a:hover {
+	background:#0B7CFF
+}
+
+
 	.spinner {
 	  width: 40px;
 	  height: 40px;
