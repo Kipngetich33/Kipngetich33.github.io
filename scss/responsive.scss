@@ -1,15 +1,12 @@
 
-/* only small desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
     
 }
 
-/* tablets */
 @media (max-width: 991px) {
 
 }
 
-/* only small tablets */
 @media (min-width: 768px) and (max-width: 991px) {
     #hero-area .contents h1{
         font-size: 28px;
@@ -42,7 +39,6 @@
 
 }
 
-/* mobile or only mobile */
 @media (max-width: 767px) {
     .section-header .section-title{
         font-size: 20px;
